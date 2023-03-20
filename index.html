@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The time line</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+             
+            <div class="top">            
+                <h1 class="text header">Временная линия открытий советских химиков во время великой отечественной войны 1941-1945</h1>
+            </div>
+            <div class = "background">
+                <p class="text begin">Для нас всех оч страшная дата 1941-1945 т.к она косунлась каждую семью там чото еще лялялял можно посмотреть наглядно на временной линии</p>
+                <div class = "time_line">
+                    <div class = "circle first">
+                        <p class = "years text">1941</p>
+                    </div>
+                    <div class = "circle second">
+                        <p class = "years text">1942</p>
+                    </div>
+                    <div class = "circle third">
+                        <p class = "years text">1943</p>
+                    </div>
+                    <div class = "circle fourth">
+                        <p class = "years text">1944</p>
+                    </div>
+                    <div class = "circle fiveth">
+                        <p class = "years text">1945</p>
+                    </div>
+                    <script>
+                    var div1 = document.getElementsByClassName('first')[0];
+                        var hidden1 = false;
+                        div1.addEventListener('click', function (event) 
+                        {
+                            hidden1 = !hidden1;
+                            if (hidden || hidden2 || hidden3 || hidden4)
+                                hidden1 = false;
+                            targList1 = document.getElementsByClassName("forty-one");
+                            var element1 = document.querySelector('.forty-one');
+                            var animation1;
+                            if (targList1) {
+                                if(hidden1) {      
+                                    for (var x = 0; x < targList1.length; x++) {
+                                        targList1[x].style.visibility = "visible";
+                                            }  
+                                        
+                                        animation1 = element1.animate([
+                                        {opacity: '0'},
+                                        {opacity: '100%'}
+                                        ], 500);
+                                        element1.style.opacity = '100%'
+                                        div1.style.backgroundColor  = 'darkred';
+                                    } 
+                                else {
+                                    for (var x = 0; x < targList1.length; x++) {
+                                    targList1[x].animate([
+                                    {opacity: '100%'},
+                                    {opacity: '0'},
+                                    ], 500);
+                                    div1.style.backgroundColor  = 'Gray';
+                                    targList1[x].style.visibility = "hidden";
+                                    }             
+                                    }
+                                }
+                        });  
+                        var div = document.getElementsByClassName('fourth')[0];
+                        var hidden = false;
+                        div.addEventListener('click', function (event) 
+                        {
+                            hidden = !hidden;
+                            if (hidden1 || hidden2 || hidden3 || hidden4)
+                                hidden = false;
+                            targList = document.getElementsByClassName("forty-four");
+                            var element = document.querySelector('.forty-four');
+                            var animation;
+                            if (targList) {
+                                if(hidden) {      
+                                    for (var x = 0; x < targList.length; x++) {
+                                        targList[x].style.visibility = "visible";
+                                            }  
+                                        
+                                        animation = element.animate([
+                                        {opacity: '0'},
+                                        {opacity: '100%'}
+                                        ], 500);
+                                        element.style.opacity = '100%'
+                                        div.style.backgroundColor  = 'darkred';
+                                    } 
+                                else {
+                                    for (var x = 0; x < targList.length; x++) {
+                                    targList[x].animate([
+                                    {opacity: '100%'},
+                                    {opacity: '0'},
+                                    ], 500);
+                                    div.style.backgroundColor  = 'Gray';
+                                    targList[x].style.visibility = "hidden";
+                                    
+                                    }             
+                                    }
+                                }
+                        });
+                        var div2 = document.getElementsByClassName('second')[0];
+                        var hidden2 = false;
+                        div2.addEventListener('click', function (event) 
+                        {
+                            hidden2 = !hidden2;
+                            if (hidden1 || hidden || hidden3 || hidden4)
+                                hidden2 = false;
+                            targList2 = document.getElementsByClassName("forty-two");
+                            var element2 = document.querySelector('.forty-two');
+                            var animation2;
+                            if (targList2) {
+                                if(hidden2) {      
+                                    for (var x = 0; x < targList2.length; x++) {
+                                        targList2[x].style.visibility = "visible";
+                                            }  
+                                        
+                                        animation2 = element2.animate([
+                                        {opacity: '0'},
+                                        {opacity: '100%'}
+                                        ], 500);
+                                        element2.style.opacity = '100%'
+                                        div2.style.backgroundColor  = 'darkred';
+
+                                    } 
+                                else {
+                                    for (var x = 0; x < targList2.length; x++) {
+                                    targList2[x].animate([
+                                    {opacity: '100%'},
+                                    {opacity: '0'},
+                                    ], 500);
+                                    div2.style.backgroundColor  = 'Gray';
+
+                                    targList2[x].style.visibility = "hidden";
+
+                                    }             
+                                    }
+                                }
+                        });
+                        var div3 = document.getElementsByClassName('third')[0];
+                        var hidden3 = false;
+                        div3.addEventListener('click', function (event) 
+                        {
+                            hidden3 = !hidden3;
+                            if (hidden1 || hidden || hidden2 || hidden4)
+                                hidden3 = false;
+                            targList3 = document.getElementsByClassName("forty-three");
+                            var element3 = document.querySelector('.forty-three');
+                            var animation3;
+                            if (targList3) {
+                                if(hidden3) {      
+                                    for (var x = 0; x < targList3.length; x++) {
+                                        targList3[x].style.visibility = "visible";
+                                            }  
+                                        
+                                        animation3 = element3.animate([
+                                        {opacity: '0'},
+                                        {opacity: '100%'}
+                                        ], 500);
+                                        element3.style.opacity = '100%'
+                                        div3.style.backgroundColor  = 'darkred';
+
+                                    } 
+                                else {
+                                    for (var x = 0; x < targList3.length; x++) {
+                                    targList3[x].animate([
+                                    {opacity: '100%'},
+                                    {opacity: '0'},
+                                    ], 500);
+                                    targList3[x].style.visibility = "hidden";
+                                    div3.style.backgroundColor  = 'gray';
+
+                                    }             
+                                    }
+                                }
+                        });
+                        var div4 = document.getElementsByClassName('fiveth')[0];
+                        var hidden4 = false;
+                        div4.addEventListener('click', function (event) 
+                        {
+                            hidden4 = !hidden4;
+                            if (hidden1 || hidden || hidden2 || hidden3)
+                                hidden4 = false;
+                            targList4 = document.getElementsByClassName("forty-five");
+                            var element4 = document.querySelector('.forty-five');
+                            var animation4;
+                            if (targList4) {
+                                if(hidden4) {      
+                                    for (var x = 0; x < targList4.length; x++) {
+                                        targList4[x].style.visibility = "visible";
+                                            }  
+                                        
+                                        animation4 = element4.animate([
+                                        {opacity: '0'},
+                                        {opacity: '100%'}
+                                        ], 500);
+                                        element4.style.opacity = '100%'
+                                        div4.style.backgroundColor  = 'darkred';
+
+                                    } 
+                                else {
+                                    for (var x = 0; x < targList4.length; x++) {
+                                    targList4[x].animate([
+                                    {opacity: '100%'},
+                                    {opacity: '0'},
+                                    ], 500);
+                                    targList4[x].style.visibility = "hidden";
+                                    div4.style.backgroundColor  = 'gray';
+
+                                    }             
+                                    }
+                                }
+                        });
+                    </script>
+                <p class = "text info">????</p>
+                <div class = "forty-one">
+                    <h1 class = "text header">1941</h1>
+                    <div class="sciens">
+                        <div id = "goldberg">
+                            <img class = "img_s" class = "img_s" src = "https://wiki.ssmu.ru/images/7/78/Goldberg.d.i.jpg">
+                            <div class = "text about">
+                                Профессор 
+                                Д.И. Гольдберг во главе коллектива кафедры патофизиологии ТМИ разработал метод 
+                                стимуляции заживления ран и язвенных процессов эмбриональной мазью (мазь Гольдберга 
+                                готовилась из гомогената тканей эмбрионов крупного рогатого скота), она стимулировала 
+                                развитие грануляционной ткани, ускоряла эпителизацию и заживление ран; с конца 1941 г. 
+                                началось широкое применение мази в госпиталях, а на базе мясокомбината и фармзаводов 
+                                было организовано ее производство
+                            </div>
+                        </div>
+                        <div id = "kachygi">
+                            <img class = "img_s" class = "img_s" src = "https://sun9-67.userapi.com/impf/c850016/v850016939/57e1e/qcZJ1gQ1KMk.jpg?size=580x800&quality=96&sign=538196d9cf88e486c3a732ae8f5d16ac&type=album">
+                            <div class = "text about">
+                                Анатолий Трофимович Качуги в 1941 году спроектировал специально для партизан диверсионное зажигательное средство, которое заменило дефицитные и дорогие магнитные мины. Изготовленная им на основе соединений фосфора мастика внешне походила на мыло и выглядела очень безобидно.
+                            </div>
+                        </div>
+                        <div id = "zelinskiy">
+                            <img class = "img_s" class = "img_s" src = "https://upload.wikimedia.org/wikipedia/commons/b/b6/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9_%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%B2%D0%B8%D1%87_%D0%97%D0%B5%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9.jpg">
+                            <div class = "text about">
+                                Изобретенный противогаз Николая Дмитриевича Зелинского оказался намного лучше всех известных средств защиты. В начале второй мировой войны он усовершенствовал свой противогаз.
+                            </div>
+                        </div>
+                        <div id = "kapica">
+                            <img class = "img_s" class = "img_s" src = "https://ethnomir.ru/upload/medialibrary/3e5/kapica.jpg">
+                            <div class = "text about">
+                                Пётр Леонидович Капица придумал устройство для получения в неограниченном количестве жидкого кислорода из воздуха. Для получения взрывчатки достаточно было пропитать им опилки или торф и поджечь. Такой взрывчаткой в 1941 году начиняли авиационные бомбы даже на аэродромах.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class = "forty-two">
+                    <h1 class = "text header">1942</h1>
+                    <div class="sciens">
+                        <img class = "img_s" class = "img_s" src = "https://fs3.fotoload.ru/f/0418/1524861169/ee29c59a1a.jpg">
+                        <div class = "text about">
+                            Еще до Сталинграда Ермольева начала работать над получением пенициллина из отечественного сырья. И в том же 1942 году ею был получен первый отечественный пенициллин (крустозин); она приложила гигантские усилия, чтобы запустить его промышленное производство.
+                        </div>
+                    </div>
+                </div>
+                <div class = "forty-three">
+                    <h1 class = "text header">1943</h1>
+                    <div class="sciens">
+                        <img class = "img_s" class = "img_s" src = "https://upload.wikimedia.org/wikipedia/ru/f/fb/Volfkowich_S_I.jpg">
+                        <div class = "text about">
+                            Семён Исаакович Вольфкович занимался соединениями фосфора. Является создателем бутылок с самовоспламеняющейся жидкостью-«Коктейль Молотова организовано производство фосфорсодержащих веществ, на основе которых изготавливались зажигательные средства для противотанкового оружия 
+                        </div>
+                    </div>
+                </div>
+                <div class = "forty-four">
+                    <h1 class = "text header">1944</h1>
+                    <div class="sciens">
+                        <img class = "img_s" class = "img_s" src = "https://coollib.net/i/5/309505/i010-001-277182173.jpg">
+                        <div class = "text about">
+                            Ученые университета в годы войны разработали несколько препаратов. В 1944 году Исаак Постовский и завкафедрой терапии Свердловского медицинского института Борис Кушелевский получили патент на сульфанил-стрептоцид, который использовали для лечения бациллярной дизентерии. В 1944-м появилась «паста Постовского» — комбинация стрептоцида с бентонитовой глиной, которую использовали для лечения незаживающих ран и ожогов.
+                        </div>
+                    </div>
+                </div>
+                <div class = "forty-five">
+                    <h1 class = "text header">1945</h1>
+                    <div class="sciens">
+                        <div id = "none"></div>
+                        <div class = "text header" style="
+                        padding-top: 135px;">
+                            Информация об открытиях, советскими химиками, отсутствует
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <div class = "text authors"></div>
+
+        </main>
+    </body>
+</html>
