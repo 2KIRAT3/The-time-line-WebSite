@@ -47,7 +47,7 @@ body{
     border: 5px solid red;
     margin: 3px;
     display:inline-block;
-    position: absolute;
+    position: relative;
     z-index: 3;
 
 }
@@ -96,11 +96,18 @@ body{
 .header{
     z-index: 2;
     font-size: 18px;
-    position: absolute   ;
+    position: inherit ;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     padding-top: 20px;
+}
+.none{
+    font-size: 18px;
+    position: absolute ;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 .img_s{
     width: 200px; 
@@ -180,7 +187,7 @@ footer{
     color:black;
     word-spacing: 3px;
     z-index: 3;
-    top: 265%;
+    top: 310%;
     bottom: 0;
     position: absolute;
     left: 50%;
@@ -190,3 +197,24 @@ footer{
 .link:visited{
     color: gray;
 }
+.begin{
+    position: absolute;
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.quote {
+    top:-5%;
+    position: relative;
+    font-family: 'Roboto Condensed';
+    color:black;
+    margin: 20px;
+    background: #eee;
+    padding: 1em;
+    border-radius: 1em;
+  }
+  .quote figcaption,
+  .quote blockquote {
+    margin: 1em;
+  }
