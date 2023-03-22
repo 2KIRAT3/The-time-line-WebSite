@@ -181,7 +181,14 @@ body{
     left: 60%;
     position: absolute;
 }
-
+body {
+    min-height: 100vh;
+    margin: 0;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
 footer{
     font-family: 'Roboto Condensed';
     color:black;
