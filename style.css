@@ -95,14 +95,15 @@ body{
 }
 .header{
     z-index: 2;
-    font-size: 28px;
+    font-size: 18px;
     position: absolute   ;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    padding-top: 20px;
 }
 .img_s{
-    width: 250px; 
+    width: 200px; 
     height: 345px;
     position: absolute;
     border-radius: 25px;
@@ -130,19 +131,19 @@ body{
     visibility: hidden;
 }
 .first{
-    left : 15%
+    left : 5%
 }
 .second{
-    left: 30%;
+    left: 25%;
 }
 .third{
     left: 45%;
 }
 .fourth{
-    left: 60%;
+    left: 65%;
 }
 .fiveth{
-    left: 75%;
+    left: 85%;
 }
 .sciens{
     background-color: white;
@@ -172,4 +173,20 @@ body{
     padding-bottom: 20px;
     left: 45%;
     position: absolute;
+}
+
+footer{
+    font-family: 'Roboto Condensed';
+    color:black;
+    word-spacing: 3px;
+    z-index: 3;
+    top: 265%;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.link:visited{
+    color: gray;
 }
